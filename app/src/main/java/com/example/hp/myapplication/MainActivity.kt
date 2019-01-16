@@ -12,4 +12,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+    fun showMenu(view: View){
+        val intent: Intent = Intent(this, MenuActivity::class.java)
+        startActivity(intent)
+    }
+    fun showOrder(view: View){
+        val intent: Intent = Intent(this, PedidoActivity::class.java)
+        startActivity(intent)
+    }
 }

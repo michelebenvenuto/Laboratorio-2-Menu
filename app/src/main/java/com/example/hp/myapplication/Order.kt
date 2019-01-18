@@ -5,18 +5,21 @@ import kotlin.collections.ArrayList
 class Order(override val menuOrder: ArrayList<String>) : MenuOrder {
 
     override fun add(element: String) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        menuOrder.add(element)
     }
 
     override fun clear() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        menuOrder.clear()
     }
 
     override fun done() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        menuOrder.clear()
     }
 
     override fun del(elementIndex: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        menuOrder.removeAt(elementIndex)
+    }
+    fun getOrder():ArrayList<String>{
+        return this.menuOrder
     }
 }
